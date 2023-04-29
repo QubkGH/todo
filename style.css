@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color: #1B1D23;
+    color: #F9FAFA;
+    font-family: 'Open Sans';
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    background-color: #22262E;
+}
+
+header h1 {
+    margin: auto;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: -30px;
+    bottom: 0;
+    padding: 15px;
+    background-color: #15161B;
+}
+
+footer h4 {
+    margin: auto;
+    color: #7D808C;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 20%;
+    background-color: transparent;
+}
+
+button:hover {
+    transition: .3s;
+    background-color: #292D37;
+}
+
+input {
+    color: #F9FAFA;
+    border: transparent solid 1px;
+    caret-color: #F9FAFA;
+    background-color: #22262E;
+    font-size: 15pt;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #656565;
+}
+
+input:focus {
+    transition: .3s;
+    border: #242A32 solid 1px;
+    box-shadow: inset 0 0 15px #1B1E24;
+}
+
+.material-icons-outlined {
+    font-size: 16pt;
+    color: #717993;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+#tasklist {
+    list-style-type: none;
+}
+
+#tasklist li {
+    overflow: hidden;
+    box-shadow: inset 0 0 30px #1b1f25;
+    background: linear-gradient(45deg, #2B313B 40%, transparent 70%);
+    background-color: #22262E;
+    border: #2B313B solid 2px;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 15px;
+    margin-left: -40px;
+}
+
+#add-task-container {
+    overflow: hidden;
+    background-color: #2B313B;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+#add-task-button {
+    background-color: #333946;
+}
+
+#add-task-button:hover {
+    background-color: #373D4B;
+}
+
+#add-task-input {
+    border: none;
+    background-color: #272C35;
+    width: calc(100% - 35px - 30px);
+}
+
+#add-task-input:focus {
+    border: none;
+    box-shadow: inset 0 0 15px #22262e;
+}
+
+#add-task-button {
+    width: 35px;
+    height: 35px;
+    float: right;
+}
+
+.task-content {
+    display: inline;
+    margin-left: 10px;
+}
+
+.task-content span {
+    font-size: 15pt;
+
+}
+
+.buttons {
+    float: right;
+}
+
+.buttons button {
+    margin-left: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+}
